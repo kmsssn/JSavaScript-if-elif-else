@@ -1,0 +1,8 @@
+<script>
+    var money=parseInt(prompt("Insert in KZT: "));
+    if(money%380!=0){
+        alert(Math.floor(money/380)+" USD and "+Math.floor(((money/380).toFixed(2)-Math.floor(money/380))*100)+" cents");
+    }else{
+        alert("ONLY "+money/380+" USD");
+    }
+</script>

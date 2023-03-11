@@ -1,0 +1,8 @@
+<script>
+    var minutes=parseInt(prompt("Input time: "));
+    if(minutes%60!=0){
+        alert((Math.floor(minutes/60))+" HOURS AND "+(minutes-(Math.floor(minutes/60)*60))+" MINUTES");
+    }else{
+        alert("ONLY "+Math.floor(minutes/60)+" HOURS");
+    }
+</script>

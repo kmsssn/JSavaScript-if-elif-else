@@ -1,0 +1,14 @@
+<script>
+    var num=prompt("INSERT YOUR AMOUNT IN KZT: \n\n1-CONVERT TO USD\n\n2- CONVERT TO EUR\n\n3- CONVERT TO GBP");
+    var array=num.split(" ");
+    var money=parseInt(array[0]);
+    var choice=parseInt(array[1]);
+    if (choice==1){
+        alert(money+" KZT = "+(money/380).toFixed(2)+" USD");
+    }
+    else if(choice==2){
+        alert(money+" KZT = "+(money/430).toFixed(2)+" EUR");
+    }else{
+        alert(money+" KZT = "+(money/480).toFixed(2)+" GBP")
+    }
+</script>
